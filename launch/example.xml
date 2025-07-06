@@ -1,0 +1,5 @@
+<launch>
+
+    <node pkg="proyecto_grupo_1_2025" exec="example.py" name="nodito"/>
+
+</launch>
