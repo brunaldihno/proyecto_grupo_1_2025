@@ -12,7 +12,7 @@ class ExampleNode(Node):
     self.timer = self.create_timer(1, self.talk)
 
   def talk(self):
-    msg = Srting()
+    msg = String()
     msg.data = "nodito is alive"
     self.pub.publish(msg)
 
