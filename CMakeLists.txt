@@ -17,7 +17,6 @@ ament_python_install_package(${PROJECT_NAME})
 # Set the scripts
 set(PYTHON_SCRIPTS
   nodes/example.py
-  
 )
 
 # Mark them executable
@@ -31,7 +30,11 @@ install(PROGRAMS ${PYTHON_SCRIPTS}
 )
 
 # Install launch files
-install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY 
+  launch 
+  map
+  rviz
+  DESTINATION share/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
