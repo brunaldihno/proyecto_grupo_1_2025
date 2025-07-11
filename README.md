@@ -12,6 +12,10 @@ source install/local_setup.bash
 ## Codigos RUN para las actividades:
 
 ```bash
+
+ACT1
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
 ACT2
 ros2 run slam_toolbox sync_slam_toolbox_node --ros-args \
   -p odom_frame:=odom \
