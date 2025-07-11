@@ -34,6 +34,7 @@ install(DIRECTORY
   launch 
   map
   rviz
+  params
   DESTINATION share/${PROJECT_NAME})
 
 if(BUILD_TESTING)
