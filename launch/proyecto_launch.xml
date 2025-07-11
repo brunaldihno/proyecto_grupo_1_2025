@@ -16,5 +16,5 @@
   <node pkg="tf2_ros" exec="static_transform_publisher" name="base_link_to_laser"
         args="--x 0.0 --y 0.0 --z 0.0 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id base_link --child-frame-id laser" />
 
-  <node pkg="rviz2" exec="rviz2" name="rviz" output="screen" args="-d /root/workspace/src/proyecto_grupo_1_2025/rviz/config_proyecto.rviz"/>
+  <node pkg="rviz2" exec="rviz2" name="rviz" output="screen" args="-d $(find-pkg-share proyecto_grupo_1_2025)/rviz/config_proyecto.rviz"/>
 </launch>
